@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+   
+    <style>
+        #body {
+            background-image: url("assets/images/escheresque.png")
+        }
+
+        ;
+    </style>
+
+
+</head>
+
+<body id="body">
+    <nav class="container rounded navbar navbar-dark bg-info justify-content-center">
+        <h1>Crystal Collectors!</h1>
+    </nav>
+    <div class="container jumbotron my-4">
+        <h2 class="display-4 text-center">Rules!</h2>
+        <ol>
+            <li>At the start of the game you will be given a random number between 19 and 120</li>
+            <li>Each crystal collector will be worth a randomly generated number between 1 and 12</li>
+            <li>You must match your randomly generated number by clicking on the collectors</li>
+            <li>Each click will add that number to your current score</li>
+            <li>Have fun!</li>
+        </ol>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row ">
+                    <img class=" rounded m-2" id="bb" src="assets/images/breakingBad.jpg" />
+                    <img class="rounded m-2" id="cs" src="assets/images/crystalSkull.jpg" />
+                </div>
+                <div class="row ">
+                    <img class="rounded m-2" id="dc" src="assets/images/darkCrystal.jpg" />
+                    <img class="rounded m-2" id="sc" src="assets/images/strartrekCrystal.jpg" />
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="jumbotron my-4">
+                    <h1 class="text-center">Given score</h1>
+                    <h1 class="text-center my-5 text-primary" id="cgn">000</h1>
+                </div>
+                <br>
+                <div class="jumbotron my-2">
+                    <h1 class="text-center">Current score</h1>
+                    <h1 class="text-center my-5 text-warning" id="current">000</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid my-4">
+        <div class="jumbotron container">
+            <h1 class="text-center">Scoresheet</h1>
+            <div class="row">
+                <div class="col">Wins:
+                    <h3 class="text-danger" id="wins">0</h3>
+                </div>
+                <div class="col">Losses:
+                    <h3 class="text-danger" id="losses">0</h3>
+                </div>
+            </div>
+            <button class="btn-danger" id="reset">Reset Scoresheet!</button>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+    
+</body>
+
+</html>
