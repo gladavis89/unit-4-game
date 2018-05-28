@@ -17,11 +17,11 @@ $(document).ready(function() {
     darkimg = Math.floor(Math.random() * 12) + 1;
     indyimg = Math.floor(Math.random() * 12) + 1;
     starimg = Math.floor(Math.random() * 12) + 1;
-    console.log("generated score " + gscore);
-  console.log("breaking bad " + breakingimg);
-  console.log("dark crystal " + darkimg);
-  console.log("crystal skull " + indyimg);
-  console.log("dilithium " + starimg);
+//     console.log("generated score " + gscore);
+//   console.log("breaking bad " + breakingimg);
+//   console.log("dark crystal " + darkimg);
+//   console.log("crystal skull " + indyimg);
+//   console.log("dilithium " + starimg);
   }
   gameStart();
   
@@ -57,7 +57,7 @@ $(document).ready(function() {
       gameStart();
       cscore = 0;
       $("#current").text(cscore);
-      $("wins").text(wins);
+      $("#wins").text(wins);
       alert("Great job!");
     };
     // if score is greater than generate alert loss, losses++, reset numbers
@@ -77,6 +77,6 @@ $(document).ready(function() {
     wins = 0;
     losses = 0;
     $("#losses").text(losses);
-    $("wins").text(wins);
+    $("#wins").text(wins);
   });
 });
